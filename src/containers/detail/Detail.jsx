@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import DetailDisplay from '../../components/detail-display/DetailDisplay';
 import { getById } from '../../services/getById';
 
@@ -6,10 +7,10 @@ import { getById } from '../../services/getById';
 
 
 
-const Detail = props => {
+const Detail = ({ match }) => {
 
   const [detail, setDetail] = useState({});
-  const characterId = props.match.params.id;
+  const characterId = match.params.id;
   
 
   useEffect(() => {
@@ -19,6 +20,7 @@ const Detail = props => {
   console.log(detail)
   
   return(
+    
 
     <DetailDisplay detail={detail} />
   );
