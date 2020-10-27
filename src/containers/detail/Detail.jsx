@@ -16,11 +16,11 @@ const Detail = props => {
     getById(characterId)
     .then(detail => setDetail(detail))
   }, []);
+  console.log(detail)
   
   return(
 
     <DetailDisplay detail={detail} />
-
   );
 };
 
