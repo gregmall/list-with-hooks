@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailDisplay component displays DetailDisplay 1`] = `
+<DocumentFragment>
+  <div>
+    <h1
+      data-testid="detail"
+    >
+      Name: morty
+    </h1>
+    <img
+      src="www.placeholder.com"
+    />
+    <h2>
+      Status: alive
+    </h2>
+    <h2>
+      Gender: male
+    </h2>
+    <h2>
+      Created: some date
+    </h2>
+    <a
+      href="/"
+    >
+      <button>
+        GO BACK
+      </button>
+    </a>
+  </div>
+</DocumentFragment>
+`;

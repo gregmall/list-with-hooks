@@ -1,26 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
-const DetailDisplay = ({ 
-          name,
-          image,
-          status,
-          gender,
-          created
-        }) => (
+
+const DetailDisplay = ({ detail }) => (
   <div>
     
-  <h1>Name: {name}</h1>
-  <img src={image}/>
-  <h2>Status: {status}</h2>
-  <h2>Gender: {gender}</h2>
-  <h2>Created: {created}</h2>
-  <Link to="/"><button>GO BACK</button></Link>
+    <h1 data-testid ="detail">Name: {detail.name}</h1>
+    <img src={detail.image}/>
+    <h2>Status: {detail.status}</h2>
+    <h2>Gender: {detail.gender}</h2>
+  < h2>Created: {detail.created}</h2>
+    <a href="/"><button>GO BACK</button></a>
   
 </div>
  
-  
 );
 
 DetailDisplay.propTypes = {

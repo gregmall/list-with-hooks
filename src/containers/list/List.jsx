@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
-import { Link } from 'react-router-dom'
 import { getNameApi } from '../../services/getNameApi'
 import CharacterList from '../../components/characters-list/CharactersList';
 

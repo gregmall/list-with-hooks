@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     BrowserRouter as Router,
     Route,
@@ -7,8 +7,6 @@ import {
 } from 'react-router-dom';
 import List from '../../containers/list/List'
 import Detail from '../../containers/detail/Detail'
-
-
 
 export default function App() {
 

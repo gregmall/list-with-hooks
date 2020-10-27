@@ -8,9 +8,7 @@ const Character = ({ image, name }) => (
     
     </div>
   
- 
-  
-);
+ );
 
 Character.propTypes = {
   name: PropTypes.string.isRequired,

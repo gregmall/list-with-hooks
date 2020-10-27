@@ -5,9 +5,10 @@ import { getById } from '../../services/getById';
 
 
 
+
 const Detail = props => {
 
-  const [detail, setDetail] = useState([]);
+  const [detail, setDetail] = useState({});
   const characterId = props.match.params.id;
   
 
@@ -15,9 +16,7 @@ const Detail = props => {
     getById(characterId)
     .then(detail => setDetail(detail))
   }, []);
-  console.log(detail)
-
-
+  
   return(
 
     <DetailDisplay detail={detail} />
