@@ -9,7 +9,7 @@ const DetailDisplay = ({ detail }) => (
     <img src={detail.image}/>
     <h2>Status: {detail.status}</h2>
     <h2>Gender: {detail.gender}</h2>
-  < h2>Created: {detail.created}</h2>
+    <h2>Created: {detail.created}</h2>
     <a href="/"><button>GO BACK</button></a>
   
 </div>
